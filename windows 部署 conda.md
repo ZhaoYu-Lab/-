@@ -21,3 +21,14 @@ c.NotebookApp.notebook_dir = 'G:/Notebook'
 
 重新启动即可  
 
+# 环境配置  
+1.查看所有环境   conda env list  
+2.激活你要用的环境，activate XXX , 我的虚拟环境为 pytorch  
+3.conda install ipykernel  
+4.将选择的conda环境注入Jupyter Notebook  
+
+python -m ipykernel install --user --name pytorch --display-name "Python [conda env:pytorch]"
+
+以上命令把  pytorch  换成你自己的环境，其余复制即可  
+
+5.安装好后按以前的习惯打开jupyter notebook  
